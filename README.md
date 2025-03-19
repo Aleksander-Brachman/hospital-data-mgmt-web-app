@@ -5,7 +5,7 @@ Niniejsza aplikacja webowa została utworzona w ramach pracy inżynierskiej _Sys
 Możliwe jest także samodzielne przetestowanie aplikacji, poniżej przedstawiam kroki w celu poprawnego uruchomienia i korzystania z aplikacji:
 
 **1. Wymagania wstępne:**
-- System operacyjny najlepiej oparty na Ubuntu/Debian
+- System operacyjny: najlepiej Ubuntu/Debian
 - Zainstalowany serwer HTML Apache2 oraz baza danych MariaDB lub MySQL
 - Zainstalowane w systemie pakiety php:
 ```sudo apt install php libapache2-mod-php php-mysql php-mbstring```
