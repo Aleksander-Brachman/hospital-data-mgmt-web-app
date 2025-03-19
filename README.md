@@ -32,7 +32,7 @@ Możliwe jest także samodzielne przetestowanie aplikacji, poniżej przedstawiam
 ```
 **3. Konfiguracja MariaDB lub MySQL:**
 - W MariaDB lub MySQL utwórz bazę danych 'szpital'.
-- W celu połączenia aplikacji webowej z bazą danych, w MariaDB/MySQL należy utworzyć czterech użytkowników o nazwach: 'lekarz', 'rejestracja', 'uwierzytelnienie' i 'zmien_haslo'. Przy tworzeniu użytkownika w MariaDB/MySQL należy pamiętać o nadaniu użytkownikom tego samego hasła, które znajduje się w plikach folderu 'polacz-baza'. Np. dla użytkownika 'lekarz' hasło znajduje się w pliku ```polacz-baza-lekarz.php```. Można edytować hasło znajdujące się w plikach na mniej skomplikowane, ale jedynie w celach testowych.
+- W celu połączenia aplikacji webowej z bazą danych, utwórz w MariaDB/MySQL czterech użytkowników o nazwach: 'lekarz', 'rejestracja', 'uwierzytelnienie' i 'zmien_haslo'. Przy tworzeniu użytkownika w MariaDB/MySQL pamiętaj o nadaniu użytkownikom tego samego hasła, które znajduje się w plikach folderu 'polacz-baza'. Np. dla użytkownika 'lekarz' hasło znajduje się w pliku ```polacz-baza-lekarz.php```. Można edytować hasło znajdujące się w plikach na mniej skomplikowane, ale jedynie w celach testowych.
 - Nadaj utworzonym użytkownikom uprawnienia do korzystania z bazy danych 'szpital'. W celach testowych można przyznać wszystkie uprawnienia na bazie danych dla każdego z użytkowników. Zalecane uprawnienia dla każdego z użytkowników są wyszczególnione w rozdziale 4.3.1 załączonej pracy inżynierskiej.
 - Zaimportuj plik ```szpital_db.sql``` do MariaDB/MySQL w celu utworzenia tabel w bazie danych 'szpital'.
 
