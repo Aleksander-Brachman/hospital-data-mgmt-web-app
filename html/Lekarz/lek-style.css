@@ -1,0 +1,880 @@
+/* Ustawienia generalne */
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: rgb(166, 202, 222); 
+    font-family: Helvetica, sans-serif;  
+}
+a {
+    color: blue;
+    text-decoration: none;
+  }
+header {
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px ridge black;
+    background-color: rgb(209, 106, 101);
+}
+header .panel{
+    margin: 0 0 5px 0;
+    padding-top: 5px;
+}
+header .zalogowal-sie{
+    margin: 0 0 5px 0;
+}
+header button {
+    background: #5481b5;
+    border: 0;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+header button:hover{
+    background: #1636c6;
+}
+.strona-glowna{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
+.strona-glowna a:hover{
+    color: hotpink;
+}
+
+.komunikat{
+    background-color: yellow;
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tabela{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tabela table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 80%;
+    background-color: white; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.tabela th {
+    font-weight: bold;
+    border: 2px solid #000000;
+    padding: 8px;
+    background-color: rgb(57, 179, 179);
+}
+.tabela td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+.tabela tr:nth-child(even) {
+    background-color: #e0dada;
+}
+.tabela td a{
+    display: block;
+    margin-bottom: 10px;
+}
+.tabela td a:last-child{
+    margin-bottom: 0px;
+}
+.tabela td a:hover {
+    color: hotpink;
+}
+
+.tabela-lista{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tabela-lista table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    background-color: white; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.tabela-lista th {
+    font-weight: bold;
+    border: 2px solid #000000;
+    padding: 8px;
+    background-color: rgb(57, 179, 179);
+}
+.tabela-lista td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+.tabela-lista tr:nth-child(even) {
+    background-color: #e0dada;
+}
+
+/* CSS dla lek_stronaGlowna.php */
+
+.lista-stron ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    background: #5481b5;
+}
+.lista-stron  li {
+    float: left;
+}
+.lista-stron  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.lista-stron li a:hover {
+    background: #1636c6;
+}
+.main-container-strona-glowna{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacje-lista-pacjentow{
+    text-align: center;
+}
+/* CSS dla lek_listaLogowan.php */
+.main-container-lista-logowan{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sortowanie-lista-logowan{
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+.sortowanie-lista-logowan select{
+    margin-top: 10px;
+    padding: 5px;
+}
+.sortowanie-lista-logowan button {
+    background: #5481b5;
+    border: 0;
+    margin: 10px 0 0 5px;
+    padding: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.sortowanie-lista-logowan button:hover{
+    background: #1636c6;
+}
+.informacje-lista-logowan{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS dla lek_listaLekarzy.php */
+.main-container-lista-lekarzy{
+    display:block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sortowanie-lista-lekarzy{
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+.sortowanie-lista-lekarzy select{
+    margin-top: 10px;
+    padding: 5px;
+}
+.sortowanie-lista-lekarzy button {
+    background: #5481b5;
+    border: 0;
+    margin: 10px 0 0 5px;
+    padding: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.sortowanie-lista-lekarzy button:hover{
+    background: #1636c6;
+}
+.informacje-lista-lekarzy{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS dla lek_zmienHaslo.php */
+.main-container-zmien-haslo{
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-container-zmien-haslo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.komunikat-blad-zmiany-hasla{
+    background-color: yellow;
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.informacje-zmien-haslo{
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacje-zmien-haslo .ostatnia-zmiana-hasla{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.wymogi-zmiany-hasla{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wymogi-zmiany-hasla ul{
+    list-style-type: none;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.spelnia {
+    color: green;
+} 
+.spelnia:before {
+    padding: 5px;
+    content: "\2611";
+}
+
+.nie-spelnia {
+    color: red;
+}
+.nie-spelnia:before {
+    padding: 5px;
+    content: "\2612";
+}
+
+.zmien-haslo-formularz{
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.zmien-haslo-formularz label {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+.zmien-haslo-formularz input {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.zmien-haslo-formularz button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #5481b5;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.zmien-haslo-formularz button:hover {
+    background: #1636c6;
+}
+
+/* CSS dla lek_wyswietlDane.php */
+.main-container-wyswietl-dane{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.secondary-container-wyswietl-dane{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.informacje-wyswietl-dane{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.informacje-wyswietl-dane .ostatnia-zmiana-danych{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.informacje-wyswietl-dane button {
+    background: #5481b5;
+    border: 0;
+    margin: 0 0 0 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.informacje-wyswietl-dane button:hover{
+    background: #1636c6;
+}
+.tabela-dane-osobowe{
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+}
+.tabela-dane-adresowe-kontaktowe{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+.tabela-dane-adresowe-kontaktowe input:disabled{
+    text-align: center;
+}
+.tabela-dane-adresowe-kontaktowe button {
+    background: #5481b5;
+    border: 0;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.tabela-dane-adresowe-kontaktowe button:hover{
+    background: #1636c6;
+}
+
+/* CSS dla lek_wyswietlDanePacjenta.php */
+.main-container-wyswietl-dane-pacjenta{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-container-wyswietl-dane-pacjenta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-container-left-wyswietl-dane-pacjenta{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-container-right-wyswietl-dane-pacjenta{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacje-wyswietl-dane-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.informacje-wyswietl-dane-pacjenta .ostatnia-zmiana-danych-pacjenta{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.informacje-wyswietl-dane-pacjenta button {
+    background: #5481b5;
+    border: 0;
+    margin: 0 0 0 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.informacje-wyswietl-dane-pacjenta button:hover{
+    background: #1636c6;
+}
+.tabela-dane-osobowe-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.tabela-dane-adresowe-kontaktowe-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.tabela-dane-adresowe-kontaktowe-pacjenta input:disabled{
+    text-align: center;
+}
+.tabela-dane-adresowe-kontaktowe-pacjenta button {
+    background: #5481b5;
+    border: 0;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.tabela-dane-adresowe-kontaktowe-pacjenta button:hover{
+    background: #1636c6;
+}
+.tabela-dane-osobowe-pacjenta .tabela td a{
+    margin-bottom: 0px;
+}
+.historia-pacjenta{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 3px solid black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    font-size: 15px;
+}
+
+/* CSS dla lek_dodajPobyt.php */
+.main-container-dodaj-pobyt{
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.szukaj-pacjenta{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.szukaj-pacjenta input{
+    padding: 5px;
+    font-size: 14px;
+}
+.szukaj-pacjenta button{
+    background: #5481b5;
+    border: 0;
+    margin: 10px 0 0 5px;
+    padding: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.szukaj-pacjenta button:hover{
+    background: #1636c6;
+}
+
+.blad-wyszukiwania{
+    background-color: yellow;
+    width: 75%;
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
+.anuluj button{
+    background: #5481b5;
+    border: 0;
+    margin: 10px 0 0 5px;
+    padding: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.anuluj button:hover{
+    background: #1636c6;
+}
+
+.formularz-dodaj-pobyt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    background: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.formularz-dodaj-pobyt .anuluj button{
+    background: #5481b5;
+    border: 0;
+    margin: 10px 0 0 5px;
+    width: 30%;
+    padding: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: none;
+}
+.formularz-dodaj-pobyt .anuluj button:hover{
+    background: #1636c6;
+}
+.dane-pacjenta{
+    padding: 10px;
+    text-align: left;
+    margin-left: 10px;
+}
+.dane-pacjenta label {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.dodaj-dane-pobytu{
+    padding: 20px;
+    text-align: left;
+}
+.dodaj-dane-pobytu h3{
+    margin: 0 0 20px 0;
+}
+.dodaj-dane-pobytu label {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+.dodaj-dane-pobytu input {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.dodaj-dane-pobytu select {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.dodaj-dane-pobytu textarea {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    resize: none;
+}
+.formularz-dodaj-pobyt button {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    background: #5481b5;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.formularz-dodaj-pobyt button:hover{
+    background: #1636c6;
+}
+
+/* CSS dla lek_wyswietlPobyt.php */
+.main-container-wyswietl-pobyt-pacjenta{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-container-wyswietl-pobyt-pacjenta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.secondary-container-left-wyswietl-pobyt-pacjenta{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.secondary-container-right-wyswietl-pobyt-pacjenta{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.informacje-wyswietl-pobyt-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.informacje-wyswietl-pobyt-pacjenta .ostatnia-zmiana-danych-pobytu{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.secondary-container-left-wyswietl-pobyt-pacjenta button {
+    background: #5481b5;
+    border: 0;
+    margin: 0 0 0 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.secondary-container-left-wyswietl-pobyt-pacjenta button:hover{
+    background: #1636c6;
+}
+
+
+.widok-historia-pobytu-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    border: 3px solid black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    font-size: 15px;
+}
+.formularz-aktualizuj-pobyt-pacjenta{
+    width: 80%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.formularz-aktualizuj-pobyt-pacjenta h3{
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+.formularz-aktualizuj-pobyt-pacjenta label {
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+}
+.formularz-aktualizuj-pobyt-pacjenta .checkbox-pobyt{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.formularz-aktualizuj-pobyt-pacjenta .checkbox-pobyt input[type=checkbox] {
+    width: 5%;
+    transform: scale(1.5);
+}
+.formularz-aktualizuj-pobyt-pacjenta select:disabled{
+    background: rgb(0, 0, 0);
+    color: white;
+}
+.formularz-aktualizuj-pobyt-pacjenta select {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.formularz-aktualizuj-pobyt-pacjenta textarea {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    resize: none;
+}
+.formularz-aktualizuj-pobyt-pacjenta .button-aktualizuj-pobyt{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.formularz-aktualizuj-pobyt-pacjenta .button-aktualizuj-pobyt button {
+    width: 50%;
+    border: 0;
+    background: #5481b5;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.formularz-aktualizuj-pobyt-pacjenta button:hover{
+    background: #1636c6;
+}
+
+/* CSS dla lek_wypiszPacjenta.php */
+.main-container-wypisz-pacjenta{
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.informacje-wypisz-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.informacje-wypisz-pacjenta .ostatnia-zmiana-danych-pobytu{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.potwierdz-wypis-pacjenta{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    background: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.potwierdz-wypis-pacjenta h3{
+    margin-bottom: 15px;
+}
+.informacje-o-pacjencie{
+    text-align: left;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.potwierdz-wypis-pacjenta textarea {
+    background: #ded4d4;
+    width: 95%;
+    margin-top: 10px;
+
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    resize: none;
+}
+.potwierdz-wypis-pacjenta button{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    background: #5481b5;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.potwierdz-wypis-pacjenta button:hover{
+    background: #1636c6;
+}
+
+/* CSS dla lek_ostatniePobyty.php */
+.main-container-ostatnio-zakonczone-pobyty{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacje-ostatnio-zakonczone-pobyty{
+    text-align: center;
+}
+
+
+/* Automatyczna zmiana rozkładu elementów na stronie */
+@media screen and (max-width: 1200px) {
+    .secondary-container-wyswietl-dane {
+      flex-direction: column;
+    }
+    .secondary-container-zmien-haslo {
+        flex-direction: column;
+    }
+    .zmien-haslo-formularz{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .secondary-container-wyswietl-dane-pacjenta {
+        flex-direction: column;
+    }
+    .widok-historia-pacjenta{
+        margin-bottom: 20px;
+    }
+    .secondary-container-wyswietl-pobyt-pacjenta {
+        flex-direction: column;
+    }
+    .formularz-aktualizuj-pobyt-pacjenta{
+        margin-bottom: 40px;
+    }
+}

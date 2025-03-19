@@ -1,0 +1,699 @@
+/* Generalne ustawienia */
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: rgb(166, 202, 222); 
+    font-family: Helvetica, sans-serif;  
+}
+header {
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px ridge black;
+    background-color: rgb(101, 209, 137);
+}
+header .panel{
+    margin: 0 0 5px 0;
+    padding-top: 10px;
+}
+header .zalogowal-sie{
+    margin: 0 0 5px 0;
+}
+header button {
+    background: #5481b5;
+    border: 0;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+header button:hover{
+    background: #1636c6;
+}
+a {
+    color: blue;
+    text-decoration: none;
+  }
+.strona-glowna{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.strona-glowna a:hover{
+    color: hotpink;
+}
+
+.komunikat{
+    background-color: yellow;
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.tabela{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tabela table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 80%;
+    background-color: white; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.tabela th {
+    font-weight: bold;
+    border: 2px solid #000000;
+    padding: 8px;
+    background-color: rgb(57, 179, 179);
+}
+.tabela td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+.tabela tr:nth-child(even) {
+    background-color: #e0dada;
+}
+.tabela td a{
+    display: block;
+    margin-bottom: 10px;
+}
+.tabela td a:last-child{
+    margin-bottom: 0px;
+}
+.tabela td a:hover {
+    color: hotpink;
+}
+
+.tabela-lista{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tabela-lista table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    background-color: white; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.tabela-lista th {
+    font-weight: bold;
+    border: 2px solid #000000;
+    padding: 8px;
+    background-color: rgb(57, 179, 179);
+}
+.tabela-lista td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+.tabela-lista tr:nth-child(even) {
+    background-color: #e0dada;
+}
+/* CSS dla rej_stronaGlowna.php*/
+.main-container-strona-glowna{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lista-stron ul {
+    width: 30%;
+    list-style-type: none;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0;
+    overflow: hidden;
+    background: #5481b5;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.lista-stron li{
+    border: 3px solid black;
+    border-bottom: 0;
+}
+.lista-stron li:last-child{
+    border-bottom: 3px solid black;
+}
+.lista-stron li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.lista-stron li a:hover {
+    background: #1636c6;
+}
+
+
+/* CSS dla rej_listaLogowan.php */
+.main-container-lista-logowan{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sortowanie-lista-logowan{
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+.sortowanie-lista-logowan select{
+    margin-top: 10px;
+    padding: 5px;
+}
+.sortowanie-lista-logowan button {
+    background: #5481b5;
+    border: 0;
+    margin: 10px 0 0 5px;
+    padding: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.sortowanie-lista-logowan button:hover{
+    background: #1636c6;
+}
+.informacje-lista-logowan{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS dla rej_listaLekarzy.php */
+.main-container-lista-lekarzy{
+    display:block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sortowanie-lista-lekarzy{
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+.sortowanie-lista-lekarzy select{
+    margin-top: 10px;
+    padding: 5px;
+}
+.sortowanie-lista-lekarzy button {
+    background: #5481b5;
+    border: 0;
+    margin: 10px 0 0 5px;
+    padding: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.sortowanie-lista-lekarzy button:hover{
+    background: #1636c6;
+}
+.informacje-lista-lekarzy{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS dla rej_listaPacjentow.php */
+.main-container-lista-pacjentow{
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.szukaj-pacjenta{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.szukaj-pacjenta select{
+    margin-top: 10px;
+    padding: 5px;
+}
+.szukaj-pacjenta button{
+    background: #5481b5;
+    border: 0;
+    margin: 10px 0 0 5px;
+    padding: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.szukaj-pacjenta input{
+    padding: 5px;
+    font-size: 14px;
+}
+.szukaj-pacjenta button:hover{
+    background: #1636c6;
+}
+.informacje-lista-pacjentow{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabela-lista-pacjentow{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tabela-lista-pacjentow table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 90%;
+    background-color: white; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.tabela-lista-pacjentow th {
+    font-weight: bold;
+    border: 2px solid #000000;
+    padding: 8px;
+    background-color: rgb(57, 179, 179);
+}
+.tabela-lista-pacjentow td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+.tabela-lista-pacjentow tr:nth-child(even) {
+    background-color: #e0dada;
+}
+.tabela-lista-pacjentow td a{
+    display: block;
+    margin-bottom: 10px;
+}
+.tabela-lista-pacjentow td a:last-child{
+    margin-bottom: 0px;
+}
+.tabela-lista-pacjentow td a:hover {
+    color: hotpink;
+}
+.tabela-lista-pacjentow td span{
+    display: block;
+    margin-bottom: 5px;
+}
+.tabela-lista-pacjentow td span:last-child{
+    margin-bottom: 0px;
+}
+.tabela-lista-pacjentow button{
+    background: #5481b5;
+    border: 0;
+    margin: 10px 0 0 5px;
+    padding: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.tabela-lista-pacjentow button:hover {
+    background: #1636c6;
+}
+.blad-wyszukiwania{
+    background-color: yellow;
+    width: 75%;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+/* CSS dla rej_zmienHaslo.php */
+.main-container-zmien-haslo{
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-container-zmien-haslo{
+    display: flex;
+    flex-direction: row;
+}
+.komunikat-blad-zmiany-hasla{
+    background-color: yellow;
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.informacje-zmien-haslo{
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacje-zmien-haslo .ostatnia-zmiana-hasla{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.wymogi-zmiany-hasla{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wymogi-zmiany-hasla ul{
+    list-style-type: none;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.spelnia {
+    color: green;
+} 
+.spelnia:before {
+    padding: 5px;
+    content: "\2611";
+}
+
+.nie-spelnia {
+    color: red;
+}
+.nie-spelnia:before {
+    padding: 5px;
+    content: "\2612";
+}
+
+.zmien-haslo-formularz{
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.zmien-haslo-formularz label {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+.zmien-haslo-formularz input {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.zmien-haslo-formularz button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #5481b5;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.zmien-haslo-formularz button:hover {
+    background: #1636c6;
+}
+
+/* CSS dla rej_wyswietlDane.php */
+.main-container-wyswietl-dane{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-container-wyswietl-dane{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacje-wyswietl-dane{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.informacje-wyswietl-dane .ostatnia-zmiana-danych{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.informacje-wyswietl-dane button {
+    background: #5481b5;
+    border: 0;
+    margin: 0 0 0 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.informacje-wyswietl-dane button:hover{
+    background: #1636c6;
+}
+.tabela-dane-osobowe{
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+}
+.tabela-dane-osobowe .data-urodzenia{
+    padding: 0 20px 0 20px;
+}
+.tabela-dane-adresowe-kontaktowe{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+.tabela-dane-adresowe-kontaktowe input:disabled{
+    text-align: center;
+}
+.tabela-dane-adresowe-kontaktowe button {
+    text-transform: uppercase;
+    background: #5481b5;
+    border: 0;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.tabela-dane-adresowe-kontaktowe button:hover{
+    background: #1636c6;
+}
+
+/* CSS dla rej_wyswietlDanePacjenta.php */
+.main-container-wyswietl-dane-pacjenta{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-container-wyswietl-dane-pacjenta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacje-wyswietl-dane-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.informacje-wyswietl-dane-pacjenta .ostatnia-zmiana-danych-pacjenta{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.informacje-wyswietl-dane-pacjenta button {
+    background: #5481b5;
+    border: 0;
+    margin: 0 0 0 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.informacje-wyswietl-dane-pacjenta button:hover{
+    background: #1636c6;
+}
+.tabela-dane-osobowe-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+}
+.tabela-dane-adresowe-kontaktowe-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+.tabela-dane-adresowe-kontaktowe-pacjenta input:disabled{
+    text-align: center;
+}
+.tabela-dane-adresowe-kontaktowe-pacjenta button {
+    text-transform: uppercase;
+    background: #5481b5;
+    border: 0;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.tabela-dane-adresowe-kontaktowe-pacjenta button:hover{
+    background: #1636c6;
+}
+
+/* CSS dla rej_dodajPacjenta.php */
+.main-container-dodaj-pacjenta{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacje-dodaj-pacjenta{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.formularz-dodaj-pacjenta{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    background: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.secondary-container-dodaj-pacjenta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.dane-osobowe-pacjenta{
+    width: 50%;
+    padding: 20px;
+}
+.dane-osobowe-pacjenta label {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+.dane-osobowe-pacjenta input {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.dane-osobowe-pacjenta input:disabled{
+    background: rgb(45, 39, 39);
+    color: white;
+}
+.dane-osobowe-pacjenta .checkbox-obywatelstwo{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.dane-osobowe-pacjenta .checkbox-obywatelstwo input[type=checkbox] {
+    width: 5%;
+    transform: scale(1.5);
+}
+.dane-osobowe-pacjenta select {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.dane-adresowe-kontaktowe-pacjenta{
+    width: 50%;
+    padding: 20px;
+}
+.dane-adresowe-kontaktowe-pacjenta label {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+.dane-adresowe-kontaktowe-pacjenta input {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.dane-adresowe-kontaktowe-pacjenta select {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.formularz-dodaj-pacjenta button {
+    text-transform: uppercase;
+    border: 0;
+    background: #5481b5;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.formularz-dodaj-pacjenta button:hover{
+    background: #1636c6;
+}
+
+/* Automatyczna zmiana rozkładu danych */
+@media screen and (max-width: 1200px) {
+    .secondary-container-wyswietl-dane {
+        flex-direction: column;
+    }
+    .secondary-container-zmien-haslo {
+        flex-direction: column;
+    }
+    .zmien-haslo-formularz{
+        width: 50%
+    }
+    .secondary-container-dodaj-pacjenta{
+        flex-direction: column;
+    }
+    .dane-osobowe-pacjenta{
+        width: 100%;
+    }
+    .dane-adresowe-kontaktowe-pacjenta{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .secondary-container-wyswietl-dane-pacjenta {
+        flex-direction: column;
+    }
+}

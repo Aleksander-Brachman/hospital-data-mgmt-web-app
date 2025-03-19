@@ -1,0 +1,267 @@
+/* Ustawienia generalne */
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: rgb(166, 202, 222); 
+    font-family: Helvetica, sans-serif;  
+}
+a {
+    color: blue;
+    text-decoration: none;
+  }
+header {
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px ridge black;
+    background-color: rgb(101, 209, 137);
+}
+header .panel{
+    margin: 0 0 5px 0;
+    padding-top: 5px;
+}
+header button {
+    background: #5481b5;
+    border: 0;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+header button:hover{
+    background: #1636c6;
+}
+
+.komunikat{
+    background-color: yellow;
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* CSS dla rej_uzupelnijDane.php */
+.main-container-uzupelnij-dane{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacje-uzupelnij-dane{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.formularz-uzupelnij-dane{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    background: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.secondary-container-uzupelnij-dane{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.dane-osobowe-zawodowe{
+    width: 50%;
+    padding: 20px;
+}
+.dane-osobowe-zawodowe label {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+.dane-osobowe-zawodowe input {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.dane-osobowe-zawodowe select {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.dane-adresowe-kontaktowe{
+    width: 50%;
+    padding: 20px;
+}
+.dane-adresowe-kontaktowe label {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+.dane-adresowe-kontaktowe input {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.dane-adresowe-kontaktowe select {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.formularz-uzupelnij-dane button {
+    text-transform: uppercase;
+    border: 0;
+    background: #5481b5;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.formularz-uzupelnij-dane button:hover{
+    background: #1636c6;
+}
+
+
+
+/* CSS dla lek_czyNoweHaslo.php */
+.main-container-nowe-haslo{
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondary-container-nowe-haslo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.komunikat-blad-zmiany-hasla{
+    background-color: yellow;
+    width: 75%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.informacje-nowe-haslo{
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.strona-glowna{
+    text-align: center;
+    padding: 10px;
+
+}
+.wymogi-nowe-haslo{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wymogi-nowe-haslo ul{
+    list-style-type: none;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.spelnia {
+    color: green;
+} 
+.spelnia:before {
+    padding: 5px;
+    content: "\2611";
+}
+
+.nie-spelnia {
+    color: red;
+}
+.nie-spelnia:before {
+    padding: 5px;
+    content: "\2612";
+}
+
+.nowe-haslo-formularz{
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.nowe-haslo-formularz label {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+.nowe-haslo-formularz input {
+    background: #ded4d4;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.nowe-haslo-formularz button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #5481b5;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.nowe-haslo-formularz button:hover {
+    background: #1636c6;
+}
+
+@media screen and (max-width: 1200px) {
+    .secondary-container-uzupelnij-dane{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .dane-osobowe-zawodowe{
+        width: 100%;
+        padding: 20px;
+    }
+    .dane-adresowe-kontaktowe{
+        width: 100%;
+        padding: 20px;
+    }
+    .secondary-container-nowe-haslo {
+        flex-direction: column;
+    }
+    .nowe-haslo-formularz{
+        width: 50%;
+    }
+}
