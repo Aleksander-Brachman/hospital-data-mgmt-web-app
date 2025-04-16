@@ -1,5 +1,13 @@
 # hospital-data-mgmt-web-app
 
+**Abstract**
+
+The aim of this thesis is to create a secure server environment for a hospital facility and to design and implement a web application to manage the personal and medical data of patients of the hospital facility. Patient data in the hospital facility is collected and processed electronically. Protection of the data stored on the hospital server is ensured by secured server software, which consists of the Debian operating system, the Apache HTTP server and the MariaDB database management system. The security of the server is ensured by, among other things, a configured system firewall, client-server communication via HTTPS and storage of data in the database in encrypted form. The created and tested web application enables the hospital's staff - doctors and registrars - to work securely and efficiently with patients' personal and medical data. The web application correctly communicates with the database on the server and provides data encryption and decryption. The web application code also protects the database from SQL Injection attacks. The web application meets all the use cases declared in the thesis.
+
+---
+
+**Opis i instrukcja uruchomienia aplikacji**
+
 Niniejsza aplikacja webowa została utworzona w ramach pracy inżynierskiej _System zabezpieczeń teleinformatycznych dla placówki szpitalnej – oprogramowanie systemowe i aplikacja zarządzająca danymi_ mojego autorstwa. Głównym celem pracy było utworzenie bezpiecznego środowiska serwerowego oraz napisanie  aplikacji webowej, która pozwala na bezpieczne zarządzanie danymi pacjentów przez pracowników placówki szpitalnej. Jako zestaw oprogramowania serwera wykorzystano zestaw LAMP (Linux, Apache HTTP Server, MariaDB, PHP). Zachęcam do przeczytania pracy inżynierskiej, gdzie szczegółowo opisuję projekt bazy danych i aplikacji webowej, zastosowane rozwiązania zapewniające bezpieczeństwo poszczególnych komponentów środowiska serwerowego oraz prezentuję testy funkcjonalne aplikacji.
 
 Możliwe jest także samodzielne przetestowanie aplikacji, poniżej przedstawiam kroki w celu poprawnego uruchomienia i korzystania z aplikacji:
