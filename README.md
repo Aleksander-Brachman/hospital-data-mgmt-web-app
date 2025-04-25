@@ -6,9 +6,17 @@ The aim of this thesis is to create a secure server environment for a hospital f
 
 ---
 
-**Opis i instrukcja uruchomienia aplikacji**
+**Opis projektu**
 
-Niniejsza aplikacja webowa została utworzona w ramach pracy inżynierskiej _System zabezpieczeń teleinformatycznych dla placówki szpitalnej – oprogramowanie systemowe i aplikacja zarządzająca danymi_ mojego autorstwa. Głównym celem pracy było utworzenie bezpiecznego środowiska serwerowego oraz napisanie  aplikacji webowej, która pozwala na bezpieczne zarządzanie danymi pacjentów przez pracowników placówki szpitalnej. Jako zestaw oprogramowania serwera wykorzystano zestaw LAMP (Linux, Apache HTTP Server, MariaDB, PHP). Zachęcam do przeczytania pracy inżynierskiej, gdzie szczegółowo opisuję projekt bazy danych i aplikacji webowej, zastosowane rozwiązania zapewniające bezpieczeństwo poszczególnych komponentów środowiska serwerowego oraz prezentuję testy funkcjonalne aplikacji.
+Niniejsza aplikacja webowa została utworzona w ramach pracy inżynierskiej _System zabezpieczeń teleinformatycznych dla placówki szpitalnej – oprogramowanie systemowe i aplikacja zarządzająca danymi_ mojego autorstwa. Głównym celem pracy było utworzenie bezpiecznego środowiska serwerowego oraz napisanie aplikacji webowej, która pozwala na bezpieczne zarządzanie danymi pacjentów przez pracowników placówki szpitalnej. **Jako zestaw oprogramowania serwera wykorzystano zestaw LAMP (Linux, Apache HTTP Server, MariaDB, PHP)**. 
+
+Sama aplikacja webowa jest dedykowana dla dwóch grup pracowników placówki szpitalnej: lekarzy oraz rejestratorów. Rejestratorzy mają możliwość dodawania nowych pacjentów do szpitalnej bazy danych wraz z możliwością późniejszej modyfikacji danych kontaktowych pacjentów. Lekarze natomiast posiadają wyłączną możliwość dostępu do danych medycznych prowadzonych pacjentów. Lekarze zarządzają pobytami swoich pacjentów m.in. określając schorzenie pacjentów wg klasyfikacji ICD, opisując w szczegółowy sposób stan pacjenta w danym momencie pobytu, czy generując akt wypisu pacjenta z szpitala.
+ 
+Zachęcam do przeczytania pracy inżynierskiej, gdzie szczegółowo opisuję projekt bazy danych, wymagania funkcjonalne/niefunkcjonalne wobec aplikacji webowej, zastosowane rozwiązania zapewniające bezpieczeństwo poszczególnych komponentów środowiska serwerowego oraz prezentuję testy funkcjonalne aplikacji.
+
+---
+
+**Instrukcja uruchomienia aplikacji**
 
 Możliwe jest także samodzielne przetestowanie aplikacji, poniżej przedstawiam kroki w celu poprawnego uruchomienia i korzystania z aplikacji:
 
